@@ -12,8 +12,8 @@ const SLIDE_DATA = [
 class WelcomeScreen extends Component {
   state = {
     token: null
-  };
-
+  }; 
+  
   async componentWillMount() {
     // To remove token to test login - logout functions
     // AsyncStorage.removeItem("fb_token");
