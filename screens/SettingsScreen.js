@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Platform } from "react-native";
 import { Button } from "react-native-elements";
 import { connect } from "react-redux";
 import { clearLikedJobs } from "../actions";
@@ -7,7 +7,7 @@ import { clearLikedJobs } from "../actions";
 class SettingsScreen extends Component {
   render() {
     return (
-      <View>
+      <View style={{ marginTop: 10 }}>
         <Button
           title="Reset Liked Jobs"
           large
